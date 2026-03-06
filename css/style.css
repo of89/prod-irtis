@@ -2264,7 +2264,6 @@ header .logo:hover {
     z-index: 2;
 }
 
-/* ЗАКУПКИ > КАРТОЧКИ ——— */
 .hangers .tabs-panels {
     display: flex;
     flex-direction: column;
@@ -6588,15 +6587,21 @@ footer.wide-footer .footer-meta .text-info {
         padding-bottom: 16px;
     }
 
-/*  ЗАКУПКИ ——— */
+/*  ЗАКУПКИ ——— medium */
     .hangers {
-        padding: 56px 40px 80px 40px;
+        padding: 56px 40px 112px 40px;
     }
 
     .hangers .inner {
         flex-wrap: wrap;
         max-width: 1200px;
-        gap: 120px 0;
+        gap: 80px 0;
+    }
+
+    .hangers .intro-info {
+        flex-wrap: wrap;
+        max-width: 1200px;
+        gap: 88px 0;
     }
 
     .hangers h1 {
@@ -6612,26 +6617,151 @@ footer.wide-footer .footer-meta .text-info {
         letter-spacing: -0.25px;
     }
 
-    .hangers .paragraph {
+    .hangers .intro-info .paragraph {
         padding-right: 12px;
     }
 
-    .hangers .inner .key-info {
+    .hangers .intro-info .key-info {
         flex: 1 0 0;
         min-width: 360px;
         max-width: 960px;
     }
 
-    .hangers .inner .key-info img {
+    .hangers .intro-info .key-info img {
         width: 80px;
     }
 
-    .hangers .inner .text-info {
-        min-width: 480px;
+    .hangers .intro-info .text-info {
+        min-width: 552px;
         max-width: 960px;
         padding-top: 6px;
-        padding-left: 24px;
-        gap: 280px;
+        gap: 160px;
+    }
+
+/*  ЗАКУПКИ > основное ——— medium */
+    .hangers .main-info {
+        gap: 80px;
+    }
+
+    .hangers .main-info .plight {
+        max-width: 560px;
+        gap: 32px;
+        margin-bottom: 16px;
+    }
+
+    .hangers .main-info h3 {
+        font-size: var(--fz-28);
+        line-height: 120%;
+    }
+
+    .hangers .main-info .plight .links-gallery {
+        gap: 20px;
+    }
+
+    .hangers .main-info .plight .link {
+        font-size: var(--fz-15);
+        text-underline-offset: 4px;
+    }
+
+    .hangers .main-info .plight .CTA {
+        gap: 12px;
+    }
+
+    .hangers .main-info .plight .subtext {
+        font-size: var(--fz-12);
+    }
+
+    .hangers .main-info .CTA .button,
+    .hangers .key-info .hangers-card .button {
+        font-size: var(--fz-12);
+        height: 48px;
+        gap: 10px;
+        min-width: 320px;
+    }
+
+    .hangers .main-info .key-info .hangers-card .button img {
+        width: 12px;
+    }
+
+    .hangers .main-info .key-info {
+        max-width: 800px;
+        gap: 48px;
+    }
+
+    .hangers .main-info .key-info .tab-header {
+        gap: 48px;
+    }
+
+    .hangers .main-info .key-info .tab-button {
+        height: 48px;
+        padding: 10px 40px;
+        font-size: var(--fz-12);
+    }
+
+    .hangers .main-info .key-info .tab-button.is-active {
+        box-shadow: 
+            0 8px 16px -4px rgba(131,127,135,0.25);
+        z-index: 2;
+    }
+
+/*  ЗАКУПКИ > КАРТОЧКИ ——— medium */
+    .hangers .tab-panel {
+        gap: 16px;
+    }
+
+    .hangers .hangers-card {
+        box-shadow: 0 8px 16px -4px rgba(131,127,135,0.25);
+        padding: 20px 24px 24px 24px;
+    }
+
+    .hangers .hangers-card .inner {
+        gap: 20px;
+    }
+
+    .hangers .hangers-card .title-info {
+        gap: 16px;
+    }
+
+    .hangers .hangers-card h4 {
+        font-size: var(--fz-18);
+    }
+
+    .hangers .hangers-card .text-info {
+        margin-top: -20px;
+    }
+
+    .hangers .hangers-card .tables {
+        flex-wrap: wrap;
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+
+    .hangers .hangers-card .btn-link {
+        max-height: 48px;
+        padding: 16px 0;
+        text-underline-offset: 4px;
+    }
+
+    .hangers .hangers-card .btn-link a {
+        font-size: var(--fz-12);
+    }
+
+    .hangers .hangers-card .info-table {
+        min-width: 320px;
+    }
+
+    .hangers .hangers-card .info-table .item {
+        padding: 16px 0;
+    }
+
+    .hangers .hangers-card .subheading-4,
+    .hangers .hangers-card .paragraph {
+        font-size: var(--fz-17);
+        line-height: 125%;
+    }
+
+    .hangers .hangers-card .title .subheading-4 {
+        flex: 0 0 176px;
     }
 
 /*  ФУТЕР ——— medium */
@@ -8383,7 +8513,7 @@ footer.wide-footer .footer-meta .text-info {
         gap: 40px;
     }
 
-    .hangers .inner .key-info {
+    .hangers .intro-info .key-info {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -8393,7 +8523,7 @@ footer.wide-footer .footer-meta .text-info {
         padding-right: 8px;
     }
 
-    .hangers .inner .text-info {
+    .hangers .intro-info .text-info {
         min-width: 688px;
         padding-left: 0;
         gap: 40px;
@@ -9321,6 +9451,7 @@ footer.wide-footer .footer-meta .text-info {
 
     .hangers .inner {
         max-width: 736px;
+        gap: 56px 0;
     }
 
     .hangers h1 {
@@ -9338,13 +9469,13 @@ footer.wide-footer .footer-meta .text-info {
         line-height: 110%;
     }
 
-    .hangers .paragraph {
+    .hangers .intro-info .paragraph {
         font-size: var(--fz-13);
         line-height: 135%;
         padding-right: 16px;
     }
 
-    .hangers .inner .key-info {
+    .hangers .intro-info .key-info {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
@@ -9352,15 +9483,134 @@ footer.wide-footer .footer-meta .text-info {
         max-width: 670px;
     }
 
-    .hangers .inner .key-info img {
+    .hangers .intro-info .key-info img {
         width: 60px;
     }
 
-    .hangers .inner .text-info {
+    .hangers .intro-info .text-info {
         min-width: 320px;
         max-width: 670px;
         gap: 32px;
         padding-left: 0;
+    }
+
+    .hangers .main-info {
+        gap: 64px;
+    }
+
+    .hangers .main-info .plight {
+        max-width: 480px;
+        gap: 24px 2px;
+        margin-bottom: 4px;
+    }
+
+    .hangers .main-info h3 {
+        font-size: var(--fz-20);
+    }
+
+    .hangers .main-info .plight .links-gallery {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 8px;
+    }
+
+    .hangers .main-info .plight .link {
+        font-size: var(--fz-13);
+        text-underline-offset: 2px;
+        text-align: center;
+    }
+
+    .hangers .main-info .plight .CTA {
+        gap: 8px;
+    }
+
+    .hangers .main-info .plight .subtext {
+        font-size: var(--fz-10);
+    }
+
+    .hangers .main-info .CTA .button,
+    .hangers .key-info .hangers-card .button {
+        font-size: var(--fz-10);
+        height: 40px;
+        gap: 8px;
+        min-width: 280px;
+    }
+
+    .hangers .main-info .key-info .hangers-card .button img {
+        width: 10px;
+    }
+
+    .hangers .main-info .key-info {
+        max-width: 640px;
+        gap: 24px;
+    }
+
+    .hangers .main-info .key-info .tab-header {
+        gap: 24px;
+    }
+
+    .hangers .main-info .key-info .tab-button {
+        height: 40px;
+        padding: 8px 16px;
+        font-size: var(--fz-10);
+    }
+
+    .hangers .main-info .key-info .tab-button.is-active {
+        box-shadow: none;
+    }
+
+    .hangers .tab-panel {
+        gap: 8px;
+    }
+
+    .hangers .hangers-card {
+        box-shadow: 0 4px 8px -2px rgba(131,127,135,0.25);
+        padding: 16px 12px 24px 12px;
+    }
+
+    .hangers .hangers-card .inner {
+        gap: 12px;
+    }
+
+    .hangers .hangers-card .title-info {
+        gap: 12px;
+    }
+
+    .hangers .hangers-card h4 {
+        font-size: var(--fz-14);
+    }
+
+    .hangers .hangers-card .tables {
+        gap: 16px 24px;
+        margin-bottom: 24px;
+    }
+
+    .hangers .hangers-card .btn-link {
+        max-height: 40px;
+        padding: 12px 0;
+        text-underline-offset: 4px;
+    }
+
+    .hangers .hangers-card .btn-link a {
+        font-size: var(--fz-10);
+    }
+
+    .hangers .hangers-card .info-table {
+        min-width: 244px;
+    }
+
+    .hangers .hangers-card .info-table .item {
+        padding: 8px 0;
+    }
+
+    .hangers .hangers-card .subheading-4,
+    .hangers .hangers-card .paragraph {
+        font-size: var(--fz-13);
+        line-height: 125%;
+    }
+
+    .hangers .hangers-card .title .subheading-4 {
+        flex: 0 0 104px;
     }
 
 /*  ФУТЕР ——— small */
@@ -11089,12 +11339,17 @@ footer.wide-footer .footer-meta .text-info {
     }
 
     .team .inner,
-    .hangers .inner {
+    .hangers .inner .intro-info {
         gap: 24px;
+        margin-bottom: 8px;
+    }
+
+    .hangers .inner {
+        gap: 40px 0;
     }
     
     .team .inner .key-info,
-    .hangers .inner .key-info {
+    .hangers .intro-info .key-info {
         flex-direction: row;
         align-items: center;
         gap: 24px;
@@ -11106,9 +11361,17 @@ footer.wide-footer .footer-meta .text-info {
     }
 
     .team .inner .text-info,
-    .hangers .inner .text-info {
+    .hangers .intro-info .text-info {
         gap: 16px;
         padding-left: 0;
+    }
+
+    .hangers .main-info {
+        gap: 32px;
+    }
+
+    .hangers .main-info .plight {
+        margin-bottom: 16px;
     }
 }
 
